@@ -1,7 +1,8 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* border: solid 1px red; */
-}
+:root {
+   border: solid 1px red;
+} 
+*/

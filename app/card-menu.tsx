@@ -1,8 +1,8 @@
 import { FaHeart } from "react-icons/fa"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 type CardMenu = {
-  src: string,
+  src: string | StaticImageData,
   title: string,
   desc: string,
   price: number,

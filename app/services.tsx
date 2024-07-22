@@ -3,7 +3,6 @@ import DeliveryImg from '../public/delivery 1.png';
 import CourierImg from '../public/courier 1.png';
 import OrderImg from '../public/order 1.png';
 
-
 export function Services() {
   return (
     <div className="container w-full bg-slate-50">

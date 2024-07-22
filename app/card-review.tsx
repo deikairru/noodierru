@@ -4,10 +4,10 @@ import React from 'react'
 import { FaRegStar } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import { FaStarHalfAlt } from "react-icons/fa";
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 type CardReview = {
-  src: string,
+  src: string | StaticImageData,
   name: string,
   count: number,
   desc: string,
@@ -15,7 +15,7 @@ type CardReview = {
 
 export function CardReview(props: CardReview) {
   let reviewStar = (count: number): React.JSX.Element[] => {
-    let stars = Array.from({ length: 5 }, () => <FaRegStar size={30} className='text-orange-400' />)
+    let stars = Array.from({ length: 5 }, (v, k) => <FaRegStar key={k} size={30} className='text-orange-400' />)
     let i: number;
 
     for (i = 0; i <= count; i++) {

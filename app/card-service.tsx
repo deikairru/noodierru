@@ -1,8 +1,8 @@
 'use client'
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 type CardService = {
-  src: string,
+  src: string | StaticImageData,
   title: string,
   desc: string,
 }
