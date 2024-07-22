@@ -1,17 +1,24 @@
 'use client'
 import Image from "next/image"
 
-export function CardService({ src, title, desc }) {
+type CardService = {
+  src: string,
+  title: string,
+  desc: string,
+}
+
+export function CardService(props: CardService) {
   return (
     <div className="flex flex-col p-10 justify-center gap-2 items-center">
       <Image
-        src={src}
+        className="aspect-ratio-1"
+        src={props.src}
         alt="test"
-        width={180}
-        height={180}
+        width={100}
+        height={100}
       />
-      <h1 className="font-semibold mt-4">{title}</h1>
-      <p className="font-medium">{desc}</p>
+      <h1 className="font-semibold mt-4">{props.title}</h1>
+      <p className="font-medium">{props.desc}</p>
     </div >
   )
 }

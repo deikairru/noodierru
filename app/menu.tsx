@@ -9,7 +9,7 @@ export function Menu() {
     <div className="container w-full bg-slate-50">
       <div className="services flex flex-col justify-center mt-24 items-center text-center">
         <h2 className="font-medium text-xl text-orange-300">Our Menu</h2>
-        <h1 className="font-semibold text-4xl">Our Popular Menu</h1>
+        <h1 className="font-bold text-4xl">Our Popular Menu</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum fugit cumque, ipsam sint soluta.</p>
         <div className="flex flex-row justify-center space-x-5 mt-10">
           <CardMenu src={MenuImg1} title={"Ramen"} desc={"Ramen noodle"} price={20} />
