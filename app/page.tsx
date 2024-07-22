@@ -8,7 +8,7 @@ const readexPro = Readex_Pro({
 
 export default function Home() {
   return (
-    <main className="readPro.main flex min-h-screen flex-col items-center border-2 border-red-600">
+    <main className="readPro.main flex min-h-screen w-full flex-col text-lg items-center bg-orange-50">
       <Header />
       <Hero />
     </main>
