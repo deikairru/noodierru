@@ -3,6 +3,7 @@ import { Hero } from './hero';
 import { Services } from './services';
 import { Menu } from './menu';
 import { Review } from './review';
+import { CTA } from './cta'
 import { Readex_Pro } from 'next/font/google';
 
 const readexPro = Readex_Pro({
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Menu />
       <Review />
+      <CTA />
     </main>
   );
 }

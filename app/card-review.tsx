@@ -31,17 +31,17 @@ export function CardReview(props: CardReview) {
   return (
     <div className="container bg-slate-200 rounded-xl px-8 py-4 min-w-[70%] mt-4 mr-4">
       <div className="flex flex-col justify-between gap-4">
-        <div className="flex flex-row">
+        <div className="flex flex-row justify-center gap-2">
           <Image
-            className='w-16 h-16 p-0 object-cover rounded-full'
+            className='w-[80px] h-[70px] m-auto object-cover rounded-full'
             src={props.src}
             width={400}
             height={400}
             alt='profile pic'
           />
-          <div className='container'>
-            <h1 className="font-semibold">{props.name}</h1>
-            <div className="flex flex-row">
+          <div className='container justify-center'>
+            <h1 className="font-semibold text-xl mt-2">{props.name}</h1>
+            <div className="flex flex-row mt-2">
               {reviewStar(props.count)}
             </div>
           </div>
