@@ -9,7 +9,7 @@ export function Hero() {
       <div className="hero-desc relative flex flex-col h-screen justify-center gap-y-4">
         <h1 className="text-5xl w-4/5 font-semibold">Be The Fastest in Delivery Your <span className="text-orange-400">Food</span></h1>
         <p className="w-3/4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, omnis soluta? Fugiat a quam sed!</p>
-        <div className="bg-orange-400 font-semibold py-2 px-6 self-start rounded-full text-center hover:text-white hover:cursor-pointer mt-2">Get Started</div>
+        <div className="bg-orange-400 font-semibold py-2 px-6 self-start rounded-full text-center hover:text-white hover:cursor-pointer mt-2 shadow-xl drop-shadow-xl">Get Started</div>
         <div className="p-0 w-10 h-10 bg-orange-400 absolute bottom-48 right-4 rounded-full"></div>
       </div>
       <div className="hero-images relative flex flex-col justify-center items-center space-y-10">

@@ -17,7 +17,7 @@ export function Menu() {
           <CardMenu src={MenuImg3} title={"Spaghetti"} desc={"Spaghetti bolognese"} price={20} />
           <CardMenu src={MenuImg4} title={"Salad"} desc={"Salad"} price={20} />
         </div>
-        <div className="bg-orange-400 font-semibold py-2 px-4 w-fit rounded-full text-center mt-14 hover:text-white hover:cursor-pointer">More Menu</div>
+        <div className="bg-orange-400 font-semibold py-2 px-4 w-fit rounded-full text-center mt-14 hover:text-white hover:cursor-pointer shadow-xl drop-shadow-xl">More Menu</div>
       </div>
     </div>
   )

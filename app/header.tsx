@@ -23,7 +23,7 @@ export function Header() {
           <span className="text-center rounded-full p-1.5 absolute -top-4 -right-4 text-[10px] bg-orange-400 leading-none">10</span>
         </div>
         <div className="cart hover:text-orange-400 hover:cursor-pointer"><FaShoppingCart size={25} /></div>
-        <div className="sign-up flex justify-center items-center px-4 py-1 space-x-2 rounded-full bg-orange-400 hover:text-white hover:cursor-pointer">
+        <div className="sign-up flex justify-center items-center px-4 py-1 space-x-2 rounded-full bg-orange-400 hover:text-white hover:cursor-pointer shadow-md drop-shadow-md">
           <FiLogIn size={20} />
           <p className="font-semibold">Login</p>
         </div>
