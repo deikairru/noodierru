@@ -9,10 +9,16 @@ type CardMenu = {
 }
 
 export function CardMenu(props: CardMenu) {
+  const priceFormat = (value) =>
+    new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD'
+    }).format(value);
+
   return (
-    <div className="relative flex flex-col p-5 justify-between gap-2 items-center bg-slate-200 rounded-2xl">
+    <div className="relative flex flex-col p-5 justify-between items-center bg-slate-100 rounded-2xl shadow-lg">
       <Image
-        className="z-10"
+        className="mb-4"
         src={props.src}
         width={220}
         height={220}
@@ -22,8 +28,8 @@ export function CardMenu(props: CardMenu) {
       <p className="font-semibold">{props.title}</p>
       <p className="font-medium">{props.desc}</p>
       <div className="z-10 flex flex-row justify-between items-center mt-4 w-full">
-        <p>{props.price}</p>
-        <FaHeart size={25} />
+        <p className="font-medium">{priceFormat(props.price)}</p>
+        <FaHeart className="hover:text-orange-400" size={25} />
       </div>
     </div>
   )

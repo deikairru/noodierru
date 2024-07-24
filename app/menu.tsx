@@ -11,13 +11,13 @@ export function Menu() {
         <h2 className="font-medium text-xl text-orange-300">Our Menu</h2>
         <h1 className="font-bold text-4xl">Our Popular Menu</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum fugit cumque, ipsam sint soluta.</p>
-        <div className="flex flex-row justify-center space-x-5 mt-10">
+        <div className="flex flex-row justify-center gap-x-8 mt-10">
           <CardMenu src={MenuImg1} title={"Ramen"} desc={"Ramen noodle"} price={20} />
           <CardMenu src={MenuImg2} title={"Sushi"} desc={"Sushi"} price={20} />
           <CardMenu src={MenuImg3} title={"Spaghetti"} desc={"Spaghetti bolognese"} price={20} />
           <CardMenu src={MenuImg4} title={"Salad"} desc={"Salad"} price={20} />
         </div>
-        <div className="bg-orange-400 font-semibold py-2 px-4 w-fit rounded-full text-center mt-14">More Menu</div>
+        <div className="bg-orange-400 font-semibold py-2 px-4 w-fit rounded-full text-center mt-14 hover:text-white hover:cursor-pointer">More Menu</div>
       </div>
     </div>
   )
