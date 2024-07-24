@@ -5,13 +5,3 @@
 * {
    /* border: solid 1px red; */
 }
-
-module.exports= {
-   theme: {
-      extend: {
-         backgroundImage: {
-            'cta-bg': "url('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7')",
-         }
-      }
-   }
-}

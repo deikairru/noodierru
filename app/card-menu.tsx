@@ -9,7 +9,7 @@ type CardMenu = {
 }
 
 export function CardMenu(props: CardMenu) {
-  const priceFormat = (value) =>
+  const priceFormat = (value: number) =>
     new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD'
