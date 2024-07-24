@@ -25,7 +25,7 @@ export function Header() {
         <div className="cart hover:text-orange-400 hover:cursor-pointer"><FaShoppingCart size={25} /></div>
         <div className="sign-up flex justify-center items-center px-4 py-1 space-x-2 rounded-full bg-orange-400 hover:text-white hover:cursor-pointer">
           <FiLogIn size={20} />
-          <p>Login</p>
+          <p className="font-semibold">Login</p>
         </div>
       </div>
     </div>
