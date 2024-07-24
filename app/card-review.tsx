@@ -18,29 +18,34 @@ export function CardReview(props: CardReview) {
     let stars = Array.from({ length: 5 }, (v, k) => <FaRegStar key={k} size={30} className='text-orange-400' />)
     let i: number;
 
-    for (i = 0; i <= count; i++) {
+    if (count % 1 != 0) {
+      stars[Math.floor(count)] = <FaStarHalfAlt size={30} className='text-orange-400' />;
+    }
+
+    for (i = 0; i < Math.floor(count); i++) {
       stars[i] = <FaStar size={30} className='text-orange-400' />
     }
 
-    if (count % 1 != 0) {
-      stars[count - 1] = <FaStarHalfAlt size={30} className='text-orange-400' />;
-    }
+
     return stars;
   }
 
   return (
-    <div className="container bg-slate-200 rounded-xl px-8 py-4 min-w-[70%] mt-4 mr-4">
-      <div className="flex flex-col justify-between gap-4">
+    <div className="container bg-slate-100 rounded-xl px-8 py-4 min-w-[368px] mt-4 mr-4 shadow-lg m-4 snap-center">
+      <div className="flex flex-col justify-between gap-4 ">
         <div className="flex flex-row justify-center gap-2">
-          <Image
-            className='w-[80px] h-[70px] m-auto object-cover rounded-full'
-            src={props.src}
-            width={400}
-            height={400}
-            alt='profile pic'
-          />
+          <div className="flex justify-center items-center">
+            <Image
+              className='aspect-square w-[60px] h-[60px] mr-4 object-cover rounded-full'
+              src={props.src}
+              width={100}
+              height={100}
+              alt='profile pic'
+            />
+
+          </div>
           <div className='container justify-center'>
-            <h1 className="font-semibold text-xl mt-2">{props.name}</h1>
+            <h1 className="font-semibold text-xl">{props.name}</h1>
             <div className="flex flex-row mt-2">
               {reviewStar(props.count)}
             </div>
