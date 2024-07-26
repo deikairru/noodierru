@@ -11,11 +11,11 @@ export function Header() {
       </div>
 
       <div className="nav font-medium flex flex-row justify-between items-center underline-offset-[12px] decoration-4 decoration-orange-400 [&>a:hover]:underline [&>a]:px-4">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#Menu">How it Works</a>
-        <a href="#About">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#Home">Home</a>
+        <a href="#Services">Services</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Review">Review</a>
+        <a href="#Contact">Contact</a>
       </div>
       <div className="cta flex flex-row justify-center items-center space-x-6">
         <div className="search hover:text-orange-400 hover:cursor-pointer">

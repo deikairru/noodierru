@@ -29,7 +29,7 @@ export function Review() {
   }, [post]);
 
   return (
-    <div className="container bg-slate-50">
+    <div id='Review' className="container bg-slate-50">
       <div className="w-full grid grid-cols-2 gap-0 mt-24 mx-auto">
         <div className="relative grid grid-cols-2 ml-auto m-8 gap-4">
           <Image className="w-full h-[200px] object-cover col-span-2 rounded-t-xl shadow-xl drop-shadow-xl" src={'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2'} width={600} height={200} alt="Review Image"

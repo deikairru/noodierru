@@ -5,7 +5,7 @@ import FoodPlate3 from "../public/foodplate3.png";
 
 export function Hero() {
   return (
-    <div className="hero w-4/5 grid grid-cols-2 space-x-10">
+    <div id='Home' className="hero w-4/5 grid grid-cols-2 space-x-10">
       <div className="hero-desc relative flex flex-col h-screen justify-center gap-y-4">
         <h1 className="text-5xl w-4/5 font-semibold">Be The Fastest in Delivery Your <span className="text-orange-400">Food</span></h1>
         <p className="w-3/4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, omnis soluta? Fugiat a quam sed!</p>

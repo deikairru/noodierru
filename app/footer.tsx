@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa"
 
 export function Footer() {
   return (
-    <div className="container w-4/5 h-2/3 mt-24">
+    <div id="Contact" className="container w-4/5 h-2/3 mt-24">
       <div className="grid grid-cols-4 gap-4">
         <div className="home flex flex-col gap-2">
           <h1 className="font-bold">Foodie Noodie</h1>
