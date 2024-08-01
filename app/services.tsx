@@ -5,12 +5,12 @@ import OrderImg from '../public/order 1.png';
 
 export function Services() {
   return (
-    <div id='Services' className="container w-full bg-slate-50">
-      <div className="flex flex-col text-center space-between-x-2 mt-24">
-        <h2 className="text-xl font-medium text-orange-400">How it Works</h2>
-        <h1 className="font-bold text-4xl">What we Serve</h1>
-        <p className="font-medium">Product Quality Is Our Priority, And Always Guarantees Halal And Safety Until It Is In Your Hands.</p>
-        <div className="flex flex-row justify-center space-x-10 mt-10">
+    <div className="container-slate text-[1rem]">
+      <div className="flex flex-col text-center justify-center items-center gap-2">
+        <h2 className="header-1">How it Works</h2>
+        <h1 className="header-2">What we Serve</h1>
+        <p className="subtext">Product Quality Is Our Priority, And Always Guarantees Halal And Safety Until It Is In Your Hands.</p>
+        <div className="flex flex-col w-full md:flex-row justify-evenly mt-8 gap-6 md:gap-4">
           <CardService src={OrderImg} title={"Easy to Order"} desc={"Order throught the App"} />
           <CardService src={DeliveryImg} title={"Fastest Deliver"} desc={"Delivery will be on Time"} />
           <CardService src={CourierImg} title={"Best Quality"} desc={"The best food quality for you"} />
