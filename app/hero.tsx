@@ -5,8 +5,8 @@ import FoodPlate3 from "../public/foodplate3.png";
 
 export function Hero() {
   return (
-    <div id='Home' className="hero w-full py-48 sm:py-60 sm:h-[75%] md:h-[80%] lg:h-screen grid grid-cols-1 lg:grid-cols-2 gap-2">
-      <div className="size-60 lg:hidden blur-2xl bg-orange-200 absolute -top-32 -right-20 rounded-full" />
+    <div id='Home' className="hero w-full py-48 sm:py-60 sm:h-[75%] md:h-[80%] lg:h-screen grid grid-cols-1 lg:grid-cols-2 gap-2 relative">
+      <div className="size-60 lg:hidden blur-2xl bg-orange-200 absolute -top-32 -right-20 rounded-full overflow-hidden" />
 
       <div className="hero-desc relative max-w-[480px] flex flex-col justify-center gap-y-4">
         {/* Background Shapes */}

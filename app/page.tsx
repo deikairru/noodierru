@@ -13,7 +13,7 @@ const readexPro = Readex_Pro({
 
 export default function Home() {
   return (
-    <main className="readPro.main flex min-h-screen w-full px-[5%] overflow-hidden  flex-col text-lg items-center bg-orange-50">
+    <main className="readPro.main flex min-h-screen w-full px-[5%] overflow-hidden flex-col text-lg items-center bg-orange-50">
       <Header />
       <Hero />
       <Services />
