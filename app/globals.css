@@ -20,8 +20,8 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-   width: 3px;
-   height: 3px;
+   width: 2px;
+   height: 2px;
    border-radius: 2px;
 }
 
@@ -40,10 +40,30 @@
 
 @layer utilities {
    .container-slate {
-      @apply w-screen px-10 py-16 bg-slate-50;
+      @apply w-screen lg:min-h-screen px-10 pb-8 md:pb-32 pt-32 bg-slate-50 items-center;
    }
 
    .container-orange {
-      @apply w-screen p-10 py-16 bg-orange-200;
+      @apply w-screen px-10 pb-8 pt-32 bg-orange-200;
+   }
+
+   .header-1 {
+      @apply text-orange-400 font-semibold text-xl
+   }
+
+   .header-2 {
+      @apply font-bold text-3xl
+   }
+
+   .subtext {
+      @apply font-medium text-lg max-w-[540px] mx-auto
+   }
+
+   .card-container {
+      @apply flex flex-col w-full md:flex-row justify-evenly lg:justify-center mt-20 gap-6 lg:gap-20 md:gap-4
+   }
+
+   .card-menu {
+      @apply overflow-hidden flex flex-col justify-center items-center text-center bg-slate-100 rounded-2xl shadow-xl max-w-[280px]
    }
 }

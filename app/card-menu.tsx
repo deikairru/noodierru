@@ -1,5 +1,6 @@
 import { FaHeart } from "react-icons/fa"
 import Image, { StaticImageData } from "next/image"
+import Divider from '../public/divider.svg'
 
 type CardMenu = {
   src: string | StaticImageData,
@@ -16,20 +17,31 @@ export function CardMenu(props: CardMenu) {
     }).format(value);
 
   return (
-    <div className="relative flex flex-col p-5 justify-between items-center bg-slate-100 rounded-2xl shadow-lg">
-      <Image
-        className="mb-4"
-        src={props.src}
-        width={220}
-        height={220}
-        alt="menu image"
-      />
-      <span className="p-0 w-[220px] h-[220px] rounded-full bg-transparent absolute center shadow-[rgba(0,0,15,0.15)_10px_10px_10px_2px]" />
-      <p className="font-semibold">{props.title}</p>
-      <p className="font-medium">{props.desc}</p>
-      <div className="z-10 flex flex-row justify-between items-center mt-4 w-full">
-        <p className="font-medium">{priceFormat(props.price)}</p>
-        <FaHeart className="hover:text-orange-400" size={25} />
+    <div className="card-menu">
+      <div className="items-center flex flex-col gap-3 p-4">
+        <Image
+          src={props.src}
+          width={180}
+          height={180}
+          alt="menu image"
+        />
+        <div className="flex flex-col gap-2 py-2">
+          <p className="font-semibold">{props.title}</p>
+          <p className="font-medium text-sm">{props.desc}</p>
+        </div>
+      </div>
+      <div className="bg-orange-400 h-full w-full">
+        <Image
+          className="w-full"
+          src={Divider}
+          width={10}
+          height={10}
+          alt="divider"
+        />
+        <div className="z-10 px-8 flex flex-row justify-between items-center my-4 w-full text-slate-50">
+          <p className="font-medium">{priceFormat(props.price)}</p>
+          <FaHeart className="hover:text-red-900" size={25} />
+        </div>
       </div>
     </div>
   )

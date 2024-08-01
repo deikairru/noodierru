@@ -6,16 +6,15 @@ import MenuImg3 from '../public/menu (4).png'
 
 export function Menu() {
   return (
-    <div id="Menu" className="container w-full bg-slate-50">
-      <div className="services flex flex-col justify-center mt-24 items-center text-center">
-        <h2 className="font-medium text-xl text-orange-400">Our Menu</h2>
-        <h1 className="font-bold text-4xl">Our Popular Menu</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum fugit cumque, ipsam sint soluta.</p>
-        <div className="flex flex-row justify-center gap-x-8 mt-10">
-          <CardMenu src={MenuImg1} title={"Ramen"} desc={"Ramen noodle"} price={20} />
-          <CardMenu src={MenuImg2} title={"Sushi"} desc={"Sushi"} price={20} />
-          <CardMenu src={MenuImg3} title={"Spaghetti"} desc={"Spaghetti bolognese"} price={20} />
-          <CardMenu src={MenuImg4} title={"Salad"} desc={"Salad"} price={20} />
+    <div id="Menu" className="container-slate">
+      <div className="flex flex-col text-center justify-center items-center gap-4">
+        <h2 className="header-1">Our Menu</h2>
+        <h1 className="header-2">Our Popular Menu</h1>
+        <p className="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum fugit cumque, ipsam sint soluta.</p>
+        <div className="flex flex-col lg:flex-row gap-12 mt-20 lg:gap-20">
+          <CardMenu src={MenuImg1} title={"Indomie Rendang"} desc={"rendang flavour noodle with tomato and eggs"} price={20} />
+          <CardMenu src={MenuImg2} title={"Toast Bread"} desc={"a crisp, hot, and brown toast bread with cheese"} price={20} />
+          <CardMenu src={MenuImg4} title={"Salad"} desc={"a cold dish of various mixtures of raw or cooked vegetables"} price={20} />
         </div>
         <div className="bg-orange-400 font-semibold py-2 px-4 w-fit rounded-full text-center mt-14 hover:text-white hover:cursor-pointer shadow-xl drop-shadow-xl">More Menu</div>
       </div>
