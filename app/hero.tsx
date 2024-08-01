@@ -5,7 +5,7 @@ import FoodPlate3 from "../public/foodplate3.png";
 
 export function Hero() {
   return (
-    <div id='Home' className="hero w-full py-32 sm:py-48 sm:h-[60%] md:h-[80%] lg:h-screen grid grid-cols-1 lg:grid-cols-2 gap-2">
+    <div id='Home' className="hero w-full py-48 sm:py-60 sm:h-[75%] md:h-[80%] lg:h-screen grid grid-cols-1 lg:grid-cols-2 gap-2">
       <div className="size-60 lg:hidden blur-2xl bg-orange-200 absolute -top-32 -right-20 rounded-full" />
 
       <div className="hero-desc relative max-w-[480px] flex flex-col justify-center gap-y-4">
@@ -15,8 +15,8 @@ export function Hero() {
         <div className="size-20 bg-orange-200 blur-2xl absolute -top-10 -left-16 rounded-full" />
 
         {/* Hero */}
-        <h1 className="text-4xl mr-8 block text-pretty font-bold">Be the fastest in receive your <span className="text-orange-400">Food</span></h1>
-        <p className="max-w-[2/3] mr-auto text-pretty">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, omnis soluta? Fugiat a quam sed!</p>
+        <h1 className="z-10 text-4xl mr-8 block text-pretty font-bold">Be the fastest in receive your <span className="text-orange-400">Food</span></h1>
+        <p className="z-10 max-w-[2/3] mr-auto text-pretty">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, omnis soluta? Fugiat a quam sed!</p>
         <div className="bg-orange-400 font-semibold py-2 px-4 text-sm self-start rounded-full text-center hover:text-white hover:cursor-pointer mt-2 shadow-xl drop-shadow-xl">Get Started</div>
       </div>
 
