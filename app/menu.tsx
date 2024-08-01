@@ -11,7 +11,7 @@ export function Menu() {
         <h2 className="header-1">Our Menu</h2>
         <h1 className="header-2">Our Popular Menu</h1>
         <p className="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum fugit cumque, ipsam sint soluta.</p>
-        <div className="flex flex-col lg:flex-row gap-12 mt-20 lg:gap-20">
+        <div className="flex flex-col lg:flex-row gap-12 mt-20 lg:gap-10">
           <CardMenu src={MenuImg1} title={"Indomie Rendang"} desc={"rendang flavour noodle with tomato and eggs"} price={20} />
           <CardMenu src={MenuImg2} title={"Toast Bread"} desc={"a crisp, hot, and brown toast bread with cheese"} price={20} />
           <CardMenu src={MenuImg4} title={"Salad"} desc={"a cold dish of various mixtures of raw or cooked vegetables"} price={20} />
