@@ -1,8 +1,7 @@
 import { CardMenu } from "./card-menu"
 import MenuImg1 from '../public/menu (1).png'
 import MenuImg2 from '../public/menu (2).png'
-import MenuImg4 from '../public/menu (3).png'
-import MenuImg3 from '../public/menu (4).png'
+import MenuImg3 from '../public/menu (3).png'
 
 export function Menu() {
   return (
@@ -14,7 +13,7 @@ export function Menu() {
         <div className="flex flex-col lg:flex-row gap-12 mt-20 lg:gap-10">
           <CardMenu src={MenuImg1} title={"Indomie Rendang"} desc={"rendang flavour noodle with tomato and eggs"} price={20} />
           <CardMenu src={MenuImg2} title={"Toast Bread"} desc={"a crisp, hot, and brown toast bread with cheese"} price={20} />
-          <CardMenu src={MenuImg4} title={"Salad"} desc={"a cold dish of various mixtures of raw or cooked vegetables"} price={20} />
+          <CardMenu src={MenuImg3} title={"Salad"} desc={"a cold dish of various mixtures of raw or cooked vegetables"} price={20} />
         </div>
         <div className="bg-orange-400 font-semibold py-2 px-4 w-fit rounded-full text-center mt-14 hover:text-white hover:cursor-pointer shadow-xl drop-shadow-xl">More Menu</div>
       </div>
