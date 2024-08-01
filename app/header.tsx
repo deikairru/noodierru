@@ -1,13 +1,20 @@
 import { FaShoppingCart, FaSearch } from "react-icons/fa";
 import { FiLogIn } from "react-icons/fi";
-import { GiNoodles } from "react-icons/gi";
+import Icon from "../public/noodle.svg"
+import Image from "next/image";
 
 export function Header() {
   return (
     <div className="header absolute z-10 top flex flex-row justify-between py-8 w-4/5">
-      <div className="title font-bold flex justify-between items-center hover:text-orange-400">
-        <p className="mr-2">Foodie Noodie</p>
-        <GiNoodles size={30} />
+      <div className="title font-bold flex justify-between items-center  hover:text-orange-400">
+        <Image
+          className="-translate-y-2"
+          src={Icon}
+          width={40}
+          height={40}
+          alt="icon"
+        />
+        <p className="ml-2 text-xl">Noodierru</p>
       </div>
 
       <div className="hidden lg:flex nav font-medium flex-row justify-between items-center underline-offset-[12px] decoration-4 decoration-orange-400 [&>a:hover]:underline [&>a]:px-4">
