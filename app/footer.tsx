@@ -36,7 +36,7 @@ export function Footer() {
         </div>
       </div>
       <div className="col-span-4 text-center mt-20">
-        <p className="font-bold text-lg my-8">© Foodie Noodie. 2024</p>
+        <p className="font-bold text-lg my-8">© Noodierru. 2024</p>
       </div>
     </div>
   )

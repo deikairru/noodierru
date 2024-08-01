@@ -17,7 +17,7 @@ export function Hero() {
         {/* Hero */}
         <h1 className="z-10 text-4xl mr-8 block text-pretty font-bold">Be the fastest in receive your <span className="text-orange-400">Food</span></h1>
         <p className="z-10 max-w-[2/3] mr-auto text-pretty">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, omnis soluta? Fugiat a quam sed!</p>
-        <div className="bg-orange-400 font-semibold py-2 px-4 text-sm self-start rounded-full text-center hover:text-white hover:cursor-pointer mt-2 shadow-xl drop-shadow-xl">Get Started</div>
+        <div className="bg-orange-400 font-semibold py-2 px-4 text-sm sm:text-base lg:text-xl lg:px-6 self-start rounded-full text-center hover:text-white hover:cursor-pointer mt-2 shadow-xl drop-shadow-xl">Get Started</div>
       </div>
 
       <div className="hero-images relative hidden lg:flex flex-col justify-center items-center space-y-10">
