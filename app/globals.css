@@ -5,3 +5,45 @@
 * {
    /* border: solid 1px red; */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+   display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+   -ms-overflow-style: none;
+   /* IE and Edge */
+   scrollbar-width: none;
+   /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+   width: 3px;
+   height: 3px;
+   border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+   background: #dddddd;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+   background: #5c5c7b;
+   border-radius: 50px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+   background: #7878a3;
+}
+
+@layer utilities {
+   .container-slate {
+      @apply w-screen px-10 py-16 bg-slate-50;
+   }
+
+   .container-orange {
+      @apply w-screen p-10 py-16 bg-orange-200;
+   }
+}
