@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Foodie Noodie",
   description: "Express delivery food services for your noodle",
   icons: {
-    icon: '/icons/logo.svg'
+    icon: '/noodle.svg'
   }
 };
 
