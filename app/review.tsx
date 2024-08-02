@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { CardReview } from "./card-review"
 import { useState, useEffect } from "react"
+import { FaArrowRight } from "react-icons/fa6";
 
 export function Review() {
   const [lastPost, setLastPost] = useState(0);
@@ -41,15 +42,16 @@ export function Review() {
             className="w-full h-[200px] object-cover rounded-br-xl shadow-xl drop-shadow-xl" src={'https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7'} width={300} height={300} alt="Review Image"
           />
         </div>
-        <div className="w-full md:w-full flex flex-col justify-center items-center xl:items-start xl:ml-20">
+        <div className="w-full md:w-full flex flex-col justify-center items-center text-center xl:items-start xl:ml-20">
           <h2 className="header-1 xl:ml-10">What They Say</h2>
           <h1 className="header-2 xl:ml-10">From Our Customer</h1>
           <div className="overflow-hidden">
-            <div id="card-review" className="flex flex-col xl:flex-row gap-4 mt-14 md:mt-2 duration-1000">
+            <div id="card-review" className="flex flex-col xl:flex-row items-center gap-4 mt-14 md:mt-2 duration-1000">
               <CardReview src={'https://images.unsplash.com/photo-1667053508464-eb11b394df83'} count={4.5} name={'Naura Silvana'} desc={'“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”'} />
               <CardReview src={'https://images.unsplash.com/photo-1701351381765-695680b7d739'} count={4} name={'Zendaya'} desc={'“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”'} />
               <CardReview src={'https://images.unsplash.com/photo-1494790108377-be9c29b29330'} count={3.5} name={'Elizabeth'} desc={'“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”'} className='md:hidden xl:block' />
               <CardReview src={'https://images.unsplash.com/photo-1438761681033-6461ffad8d80'} count={5} name={'Victoria'} desc={'“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”'} className='md:hidden xl:block' />
+              <div className="hidden bg-orange-400 font-semibold p-2 size-14 rounded-full lg-flex justify-center items-center text-slate-100 hover:cursor-pointer shadow-xl drop-shadow-xl"><FaArrowRight size={30} /></div>
             </div>
           </div>
           <div id="nav-review" className="hidden xl:flex flex-row justify-center gap-4 mt-8 translate-x-40">
