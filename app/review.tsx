@@ -51,7 +51,7 @@ export function Review() {
               <CardReview src={'https://images.unsplash.com/photo-1701351381765-695680b7d739'} count={4} name={'Zendaya'} desc={'“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”'} />
               <CardReview src={'https://images.unsplash.com/photo-1494790108377-be9c29b29330'} count={3.5} name={'Elizabeth'} desc={'“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”'} className='md:hidden xl:block' />
               <CardReview src={'https://images.unsplash.com/photo-1438761681033-6461ffad8d80'} count={5} name={'Victoria'} desc={'“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”'} className='md:hidden xl:block' />
-              <div className="hidden bg-orange-400 font-semibold p-2 size-14 rounded-full lg-flex justify-center items-center text-slate-100 hover:cursor-pointer shadow-xl drop-shadow-xl"><FaArrowRight size={30} /></div>
+              <div className="hidden bg-orange-400 font-semibold p-2 size-14 rounded-full xl:flex justify-center items-center text-slate-100 hover:cursor-pointer shadow-xl drop-shadow-xl"><FaArrowRight size={30} /></div>
             </div>
           </div>
           <div id="nav-review" className="hidden xl:flex flex-row justify-center gap-4 mt-8 translate-x-40">
