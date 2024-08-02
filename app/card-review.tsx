@@ -48,7 +48,7 @@ export function CardReview(props: CardReview) {
           </div>
           <div className='container justify-center'>
             <h1 className="font-semibold text-md md:text-lg xl:font-bold">{props.name}</h1>
-            <div className="flex flex-row mt-2">
+            <div className="flex flex-row">
               {reviewStar(props.count)}
             </div>
           </div>
