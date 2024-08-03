@@ -17,7 +17,7 @@ export function Header() {
         <p className="ml-2 text-xl">Noodierru</p>
       </div>
 
-      <div className="hidden lg:flex nav font-medium flex-row justify-between items-center underline-offset-[12px] decoration-4 decoration-orange-400 [&>a:hover]:underline [&>a]:px-4">
+      <div className="hidden lg:flex nav font-medium flex-row justify-between items-center underline-offset-[12px] decoration-4 decoration-orange-400 [&>a:hover]:border-b-2 [&>a:hover]:border-b-orange-400 [&>a]:px-4 [&>a]:pb-2">
         <a href="#Home">Home</a>
         <a href="#Services">Services</a>
         <a href="#Menu">Menu</a>
