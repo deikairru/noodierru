@@ -28,7 +28,7 @@ export function Header() {
         <div className="search hover:text-orange-400 hover:cursor-pointer">
           <FaSearch size={25} />
         </div>
-        <div className="hidden md:display cart relative [&>*:first-child:hover]:text-orange-400 [&>*:first-child:hover]:cursor-pointer">
+        <div className="hidden md:block cart relative [&>*:first-child:hover]:text-orange-400 [&>*:first-child:hover]:cursor-pointer">
           <FaShoppingCart size={25} />
           <span className="text-center rounded-full p-1.5 absolute -top-4 -right-4 text-[10px] bg-orange-400 leading-none">10</span>
         </div>

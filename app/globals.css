@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-   /* border: solid 1px red; */
-}
+/* * {
+   border: solid 1px red;
+} */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
