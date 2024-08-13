@@ -4,6 +4,7 @@ import Image from "next/image"
 import { CardReview } from "./card-review"
 import { useState, useEffect } from "react"
 import { FaArrowRight } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export function Review() {
   const [lastPost, setLastPost] = useState(0);
@@ -32,16 +33,20 @@ export function Review() {
   return (
     <div id='Review' className="container-slate lg:pl-auto xl:pl-10">
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
-        <div className="hidden relative md:grid grid-cols-2 m-2 mt-20 -translate-y-10 lg:translate-x-10 gap-4">
-          <Image className="w-full h-[200px] object-cover col-span-2 rounded-t-xl shadow-xl drop-shadow-xl" src={'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2'} width={600} height={200} alt="Review Image"
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+          viewport={{ once: false, amount: 0.1 }}
+          className="hidden relative md:grid grid-cols-2 m-2 mt-20 -translate-y-10 lg:translate-x-10 gap-4">
+          <Image className="img-review col-span-2 rounded-t-xl" src={'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2'} width={600} height={200} alt="Review Image"
           />
           <Image
-            className="w-full h-[200px] object-cover rounded-bl-xl shadow-xl drop-shadow-xl" src={'https://images.unsplash.com/photo-1447078806655-40579c2520d6'} width={300} height={300} alt="Review Image"
+            className="img-review rounded-bl-xl" src={'https://images.unsplash.com/photo-1447078806655-40579c2520d6'} width={300} height={300} alt="Review Image"
           />
           <Image
-            className="w-full h-[200px] object-cover rounded-br-xl shadow-xl drop-shadow-xl" src={'https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7'} width={300} height={300} alt="Review Image"
+            className="img-review rounded-br-xl" src={'https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7'} width={300} height={300} alt="Review Image"
           />
-        </div>
+        </motion.div>
         <div className="w-full md:w-full flex flex-col justify-center items-center text-center xl:items-start xl:ml-20">
           <h2 className="header-1 xl:ml-10">What They Say</h2>
           <h1 className="header-2 xl:ml-10">From Our Customer</h1>

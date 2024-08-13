@@ -66,4 +66,8 @@
    .card-menu {
       @apply overflow-hidden flex flex-col justify-center items-center text-center bg-slate-100 rounded-2xl shadow-xl max-w-[280px]
    }
+
+   .img-review {
+      @apply hover:brightness-100 brightness-50 w-full h-[200px] object-cover shadow-xl drop-shadow-xl transition-all ease-in-out duration-300 hover:scale-[1.01]
+   }
 }

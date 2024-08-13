@@ -6,6 +6,7 @@ import { FaStar } from "react-icons/fa6";
 import { FaStarHalfAlt } from "react-icons/fa";
 import Image, { StaticImageData } from 'next/image'
 import { cn } from '@/lib/utils';
+import { motion, Variants } from 'framer-motion';
 
 type CardReview = {
   src: string | StaticImageData,
@@ -14,6 +15,28 @@ type CardReview = {
   desc: string,
   className?: string,
 }
+
+type CardService = {
+  src: string | StaticImageData,
+  title: string,
+  desc: string,
+}
+
+const cardVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+    x: 20
+  },
+  onscreen: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 2
+    }
+  }
+};
 
 export function CardReview(props: CardReview) {
   let reviewStar = (count: number): React.JSX.Element[] => {
@@ -33,7 +56,12 @@ export function CardReview(props: CardReview) {
   }
 
   return (
-    <div className={cn("flex flex-col justify-center bg-slate-100 rounded-xl pl-8 pr-4 py-4 max-w-[320px] lg:min-w-[368px] mt-4 shadow-lg m-4 snap-center text-left", props.className)} >
+    <motion.div
+      variants={cardVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      whileHover={{ scale: 1.05 }}
+      viewport={{ once: true, amount: 0.1 }} className={cn("flex flex-col justify-center bg-slate-100 rounded-xl pl-8 pr-4 py-4 max-w-[320px] lg:min-w-[368px] mt-4 shadow-lg m-4 snap-center text-left", props.className)} >
       <div className="flex flex-col justify-between gap-4 ">
         <div className="flex flex-row justify-center gap-2">
           <div className="flex justify-center items-center">
@@ -55,6 +83,6 @@ export function CardReview(props: CardReview) {
         </div>
         <p className='text-sm xl:text-lg'>{props.desc}</p>
       </div>
-    </div >
+    </motion.div >
   );
 }
