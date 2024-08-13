@@ -7,13 +7,14 @@
 
   <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="next.js" />
+    <img src="https://img.shields.io/badge/-TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript"/>
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
     <img src="https://img.shields.io/badge/-Framer_Motion-ffca28?style=for-the-badge&logo=framer&logoColor=%23ffffff&color=%237178f6" alt="framer-motion"/>
   </div>
 
   <h3 align="center">A Food Deliver Landing Page</h3>
     <div align="center">
-      Noodierru is your ultimate destination for exploring a wide variety of noodle dishes from the comfort of your home.
+      Noodierru is your ultimate destination for enjoying a wide variety of noodle dishes from the comfort of your home with fast delivery time ensuring you don't get hungry.
     </div>
 </div>
 
@@ -28,9 +29,9 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-By developing this project, i gained hands-on experience in crafting immersive web experiences, mastering scroll animation, and implementing engaging animations. The combination of creativity and technical skills showcased in this project serves as an excellent learning opportunity for me as developers seeking to enhance their portfolio and captivate users with cutting-edge web design.
+By developing this project, i gained hands-on experience in crafting immersive web experiences, mastering scroll animation, and implementing engaging animations. The combination of creativity and technical skills showcased in this project serves as an excellent learning opportunity for me as developer seeking to enhance my portfolio and captivate users with cutting-edge web design.
 
-If you're getting started and need assistance or face any bugs, please contacted me.
+If you're cloned this project and need assistance or face any bugs, please contacted me.
 
 ## <a name="preview">🖼️ Preview Page</a>
 
