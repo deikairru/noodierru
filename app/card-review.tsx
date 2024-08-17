@@ -61,7 +61,7 @@ export function CardReview(props: CardReview) {
       initial="offscreen"
       whileInView="onscreen"
       whileHover={{ scale: 1.05 }}
-      viewport={{ once: true, amount: 0.1 }} className={cn("flex flex-col justify-center bg-slate-100 rounded-xl pl-8 pr-4 py-4 max-w-[320px] lg:min-w-[368px] mt-4 shadow-lg m-4 snap-center text-left", props.className)} >
+      viewport={{ amount: 0 }} className={cn("flex flex-col justify-center bg-slate-100 rounded-xl pl-8 pr-4 py-4 max-w-[320px] lg:min-w-[368px] mt-4 shadow-lg m-4 snap-center text-left", props.className)} >
       <div className="flex flex-col justify-between gap-4 ">
         <div className="flex flex-row justify-center gap-2">
           <div className="flex justify-center items-center">

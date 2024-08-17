@@ -19,7 +19,8 @@ const cardVariants: Variants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 2
+      duration: 2,
+      delay: 0.3,
     }
   }
 };
@@ -31,7 +32,8 @@ export function CardService(props: CardService) {
       initial="offscreen"
       whileInView="onscreen"
       whileHover={{ scale: 1.1 }}
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ amount: 0 }}
+      exit={{ opacity: 0, transition: { delay: 0.4 } }}
     >
       <div className="flex flex-col py-4 justify-center items-center min-w-[240px]">
         <Image

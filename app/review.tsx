@@ -35,8 +35,9 @@ export function Review() {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-          viewport={{ once: false, amount: 0.1 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.1 } }}
+          viewport={{ amount: 0 }}
+          exit={{ opacity: 0, transition: { delay: 0.2 } }}
           className="hidden relative md:grid grid-cols-2 m-2 mt-20 -translate-y-10 lg:translate-x-10 gap-4">
           <Image className="img-review col-span-2 rounded-t-xl" src={'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2'} width={600} height={200} alt="Review Image"
           />

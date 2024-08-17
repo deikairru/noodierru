@@ -12,9 +12,8 @@ export function Services() {
       <div className="flex flex-col text-center justify-center items-center gap-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-          viewport={{ once: true, amount: 0.5 }}
-          exit={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7, delay: 0.2 } }}
+          viewport={{ once: true, amount: 0 }}
           className="flex flex-col gap-4"
         >
           <h2 className="header-1">How it Works</h2>

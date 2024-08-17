@@ -12,9 +12,8 @@ export function Menu() {
       <div className="flex flex-col text-center justify-center items-center gap-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-          viewport={{ once: true, amount: 0.5 }}
-          exit={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
+          viewport={{ once: true, amount: 0 }}
           className="flex flex-col gap-4"
         >
           <h2 className="header-1">Our Menu</h2>
@@ -28,9 +27,10 @@ export function Menu() {
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.7 } }}
           whileTap={{ scale: 1.4 }}
-          viewport={{ once: true }}
+          viewport={{ amount: 0 }}
+          exit={{ opacity: 0, transition: { delay: 0.4 } }}
           className="bg-orange-400 font-semibold py-2 px-4 w-fit rounded-full text-center mt-14 hover:text-white hover:cursor-pointer shadow-xl drop-shadow-xl">More Menu</motion.div>
       </div>
     </div>

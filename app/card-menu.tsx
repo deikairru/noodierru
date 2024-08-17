@@ -23,7 +23,8 @@ const cardVariants: Variants = {
     transition: {
       type: "spring",
       bounce: 0.4,
-      duration: 2
+      duration: 2,
+      delay: 0.3
     }
   }
 };
@@ -41,7 +42,8 @@ export function CardMenu(props: CardMenu) {
       initial="offscreen"
       whileInView="onscreen"
       whileHover={{ scale: 1.1, rotate: -3 }}
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ amount: 0 }}
+      exit={{ opacity: 0, transition: { delay: 0.2 } }}
       className="card-menu">
       <div className="items-center flex flex-col gap-3 p-4">
         <Image
